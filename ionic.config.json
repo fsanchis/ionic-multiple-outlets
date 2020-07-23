@@ -1,0 +1,7 @@
+{
+  "name": "ion-router",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
