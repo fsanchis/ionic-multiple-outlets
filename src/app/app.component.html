@@ -1,3 +1,14 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+    <ion-header>
+
+        <ion-button (click)="show()">Show</ion-button>
+        <ion-button (click)="hide()">Hide</ion-button>
+
+    </ion-header>
+    <ion-content>
+
+        <ion-router-outlet #o="outlet" [style.width.%]="display ? 80 : 100" style="height: 100%"></ion-router-outlet>
+        <ion-router-outlet name="popup" [style.width.%]="display ? 20 : 0" style="height: 100%; left: 80%;" *ngIf="display"></ion-router-outlet>
+
+    </ion-content>
 </ion-app>
